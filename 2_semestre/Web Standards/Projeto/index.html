@@ -53,6 +53,7 @@
             width: 100%;
             height: 3px;
             margin: -1px;
+            margin-top:50px;
             border-color: rgb(28, 88, 4);
             border-style: solid;
             border-width: 2px;
@@ -69,8 +70,7 @@
         .container{
             display: grid;
             grid-template-columns: 50% 50%;
-            margin-left: 10%;
-            margin-right: 10%;
+            margin-left: 0 10% auto 10%;
         }
         .container p{
             padding-top: 10%;
@@ -90,7 +90,16 @@
             border-color: rgb(28, 88, 4);
             padding: 10px;
         }
-
+        #mapa{
+            text-align: center;
+            
+        }
+        #mapa iframe{
+            padding: 2px;
+            background-color: rgb(0, 127, 200);
+            margin: 20px auto 50px auto;
+            width: 70%;
+        }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -99,11 +108,11 @@
 </head>
 <body>
     <nav id="home">
-        <ul>
-            <a href=""><li>Animais</li></a>
+        <ul>       
             <a href="#infra"><li>Infraestrutura</li></a>
-            <a href=""><li>Localização</li></a>
-            <li><a href="#home" ><img src="https://static.thenounproject.com/png/423483-200.png" alt="Home" id="homeicon"></a></li>
+            <a href="#animais"><li>Animais</li></a>
+            <a href="#local"><li>Localização</li></a>
+            <li><a href="#home" ><img src="https://i.pinimg.com/564x/f3/b6/bc/f3b6bc44d2c26e941fa75fd5e62ee11d.jpg" alt="Home" id="homeicon"></a></li>
         </ul>
         
     </nav>
@@ -112,7 +121,7 @@
         <p>
             &nbsp;&nbsp;O Zoológico Municipal de Guarulhos, criado em 1981, mantém cerca de 
             400 animais de 100 diferentes espécies, priorizando a fauna nacional 
-            com 91% das espécies do plantel sendo nativas.<br><br>
+            com 91% das espécies do plantel sendo nativas.<br>
             &nbsp;&nbsp;O ZooGuarulhos participa de programas de conservação de espécies 
             ameaçadas, bem-estar animal, realiza pesquisas científicas e atividades 
             de educação para conservação da biodiversidade. Os animais recebem cuidados 
@@ -127,7 +136,7 @@
     <article class="container">
         <img src="https://www.unavets.com/zoo/wp-content/uploads/sites/9/2021/07/About-Us_3-786x524.jpg" alt="Foto da clínica" id="imagem2">
         <p id="texto">
-            A clínica veterinária do zoológico da cidade de Guarulhos é uma instalação 
+            <br><br>&nbsp;&nbsp;A clínica veterinária do zoológico da cidade de Guarulhos é uma instalação 
             dedicada ao cuidado e tratamento de animais selvagens e exóticos que vivem 
             no zoológico. Equipado com tecnologia moderna e uma equipe de veterinários 
             especializados, o local oferece atendimento médico, cirúrgico e de reabilitação 
@@ -136,7 +145,7 @@
             e intervenções de emergência quando necessário.
         </p>
         <p id="texto">
-            &nbsp;&nbsp;O laboratório do zoológico de Guarulhos é uma instalação dedicada à pesquisa 
+            <br><br>&nbsp;&nbsp;O laboratório do zoológico de Guarulhos é uma instalação dedicada à pesquisa 
             e análise de amostras biológicas dos animais do zoológico. Equipado com modernos 
             instrumentos científicos, o laboratório realiza exames e testes que auxiliam no 
             diagnóstico de doenças, monitoramento da saúde e desenvolvimento de programas de 
@@ -145,7 +154,30 @@
             e cuidados médicos no zoológico.
         </p>
         <img src="https://imagens.usp.br/wp-content/uploads/laboratoriofotomarcossantos025.jpg" alt="Foto do laboratório" id="imagem2">
+        <img src="https://www.carpemundi.com.br/wp-content/uploads/2023/01/amazo-2.jpg" alt="Praça de alimentação" id="imagem2">
+        <p id="texto">
+            <br><br>&nbsp;&nbsp;A praça de alimentação do zoológico de Guarulhos é um espaço 
+            acolhedor e bem equipado, projetado para oferecer uma variedade de opções 
+            gastronômicas aos visitantes. Com mesas ao ar livre e áreas sombreadas, o local 
+            permite que os frequentadores desfrutem de suas refeições em meio à natureza, 
+            enquanto apreciam a vista do zoológico. A praça conta com quiosques que servem 
+            lanches, bebidas e refeições rápidas, atendendo a diferentes gostos e preferências, 
+            proporcionando um momento de descanso e convivência durante o passeio pelo zoológico.
+        </p>
+    </article>
+    <section id="separador">
+        <section ></section>
+        <h1 id="animais">Animais</h1>
+    </section>
 
+    <section id="separador">
+        <section ></section>
+        <h1 id="local">Localização</h1>
+    </section>
+    <article id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.492085370984!2d-46.554932724995396!3d-23.442708078881445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4ffea13bf09%3A0xb8d85899781b01d4!2sZool%C3%B3gico%20Municipal%20de%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1724336192033!5m2!1spt-BR!2sbr" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </article>
 </body>
 </html>
