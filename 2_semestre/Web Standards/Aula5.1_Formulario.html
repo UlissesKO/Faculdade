@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Formulário</h1> <!--Isso aqui vai ter que ter no projeto-->
-    <form>
+    <form action=""><!--Action é oq vai fazer com os dados do form-->
         Nome:
         <input type="text" maxlength="10"><br><br>
         Idade:
@@ -17,6 +17,25 @@
         <input type="password"><br><br>
         Mensagem:
         <textarea cols="30" rows="10">Digite algo</textarea><br><br>
+        Estado: (combobox)
+        <select name="estado">
+            <option value="none">Estado</option>
+            <option value="sp">São Paulo</option><!--O value serve pra identificar a opção quando fizer o backend-->
+            <option value="rj">Rio de Janeiro</option>
+            <option value="es">Espirito Santo</option>
+        </select>
+        <br><br>
+        Pagamento: (radiobutton)
+        <input type="radio" name="pagamento" value=1>À vista<!--O name serve pra setar um grupo onde só pode escolher 1-->
+        <input type="radio" name="pagamento" value=3>3x
+        <input type="radio" name="pagamento" value=6>6x
+        <br><br>
+        Assuntos:(checkbox)<br>
+        <input type="checkbox" name="assunto" value="java">Java<br>
+        <input type="checkbox" name="assunto" value="javascript">JavaScript<br>
+        <input type="checkbox" name="assunto" value="css">CSS<br><br>
+        <input type="submit" value="Enviar"><!--O value aqui é o texto de dentro do botão-->
+        <input type="reset" value="resetar"><!--Reseta o formulario-->
     </form>
 </body>
 </html>
