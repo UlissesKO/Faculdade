@@ -2,133 +2,116 @@
 <html lang="pt-br">
 <head>
     <style>
-        html{
-            font-family: Impact;
-            border: 5px solid rgb(0, 162, 255);
-            border-top: 0px;
-            overflow-x: hidden;
-        }
-        nav ul{
-            list-style: none;
-            background-color: rgb(0, 162, 255);
-            text-align: center;
-            margin: -8px;
-            margin-bottom: 0;
-            padding: 0;
-        }        
-        nav ul li{
-            display: inline-block;
-            padding: 1%;
-        }
-        nav ul a li{
-            color: rgb(0,0,0);
-            text-decoration: none;
-        }
-        nav ul a li:hover{
-            background-color: rgb(28, 88, 4);
-            color: rgb(255, 255, 255);
-        }
-        #imagem1{
-            text-align: center;
-        }
-        #imagem1 img{
-            width: 50%;
-        }
-        p{
-            font-family: sans-serif;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-bottom: 50px;
+        body{
+            margin: 0;
+            background-image: url("https://images.pexels.com/photos/2757549/pexels-photo-2757549.jpeg?cs=srgb&dl=pexels-elias-tigiser-411757-2757549.jpg&fm=jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             text-align: justify;
         }
-        #separador h1{
-            font-family: sans-serif;
-            padding-left: 5%;
-            padding: 15px;
+        nav{
             background-color: rgb(0, 162, 255);
-            width: 99.2%;
-            margin: 0 0 50px -10px;
+            text-align: center;
+            margin: 0;
+            padding: 9px;
         }
-        #separador section{
-            background-color: rgb(28, 88, 4);
-            width: 100%;
-            height: 3px;
-            margin: -1px;
-            margin-top:50px;
-            border-color: rgb(28, 88, 4);
-            border-style: solid;
-            border-width: 2px;
-            border-radius: 20px;
+        .button{
+            padding: 10px 20px;
+            margin: 0 50px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
         }
-        #imagem2{
-            width: 100%;
-            border-color: rgb(0, 127, 200);
-            border-style: solid;
-            border-radius: 30px;
-            border-width: 3px;
-            margin: 20px;
+        .button:hover{
+            background-color: rgb(0, 79, 124);
+            color: rgb(255, 255, 255);
         }
-        #imagem3{
-            width: 70%;
-            border-color: rgb(28, 88, 4);
-            border-style: solid;
-            border-radius: 30px;
-            border-width: 3px;
-            margin: 20px;
-            margin-left: 100px;
+        .button:active{
+            background-color: rgb(0, 36, 57) !important;
         }
-        .container{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            margin-left: 0 10% auto 10%;
-        }
-        .container p{
-            padding-top: 10%;
-        }
-        #homeicon{
-            width: 25px;
-            padding: 5px;
-            right: 1%;
-            top: 1%;
+        #headbutton img{
             position: fixed;
-            background-color: rgb(0, 127, 200);
-            border: solid 2px rgb(0, 127, 200);
+            right:5px;
+            bottom: 5px;            
+            height: 30px;
+            border: 5px solid rgb(0, 162, 255);
+            border-radius: 100px;          
+        }
+        #headbutton img:hover{
+            height: 20px;
+            border: 5px solid rgb(0, 79, 124);
+            right: 10px;
+            bottom: 10px;  
+        }
+        #headbutton img:active{
+            border-color: rgb(0, 36, 57) !important;
+        }
+        #home{
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 60px;
+        }
+        #home img{
+            width: 45%;
+        }
+        #animais{
+            background-color: rgba(255, 255, 255, 0.7);
+            padding-bottom: 10px;
+        }
+        .titulo{
+            background-color: rgb(28, 88, 4);
+            margin: 0;
+            margin-top: -6px;
+            border-bottom: 5px solid rgb(51, 161, 7);
+            text-align: center;
+            border-radius: 10px;
+        }
+        table{
+            width: 100%;
+        }
+        table tr td{
+            width: 33%;
+            padding: 0;
+            padding: 0 2%;
+            margin-top: 0;
+            border-width: 0 3px;
+            border-color: black;
+            border-style: solid;
+        }
+        table .titulotable td{
+            text-align: center;
+            padding-bottom: 10px;
+            border: 3px solid black;
+        }
+        table tr td img{
+            width: 100%;
+            border-top: 10px rgb(28, 88, 4) solid;
             border-radius: 50px;
         }
-        #homeicon:hover{
-            background-color: rgb(28, 88, 4);
-            border-color: rgb(28, 88, 4);
-            padding: 10px;
+        table tr td p{
+            padding: 0 10%;
         }
-        #mapa{
+        ul li{
+            padding: 0 10%;
             text-align: center;
-            
-        }
-        #mapa iframe{
-            padding: 2px;
-            background-color: rgb(0, 127, 200);
-            margin: 20px auto 50px auto;
-            width: 70%;
         }
 
     </style>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoológico</title>
+    <title>ZooGuarulhos</title>
+    <link rel="shortcut icon" href="https://t3.ftcdn.net/jpg/01/29/12/14/360_F_129121410_48raDlwxLB3TgzT0UNtTiEytfClRvmSq.jpg" type="image/x-icon">
 </head>
 <body>
-    <nav id="home">
-        <ul>       
-            <a href="#infra"><li>Infraestrutura</li></a>
-            <a href="#animais"><li>Animais</li></a>
-            <a href="#local"><li>Localização</li></a>
-            <li><a href="#home" ><img src="https://i.pinimg.com/564x/f3/b6/bc/f3b6bc44d2c26e941fa75fd5e62ee11d.jpg" alt="Home" id="homeicon"></a></li>
-        </ul>
-        
+    <nav id="head">
+        <a href="#animais" class="button">Animais</a>
+        <a href="#infra" class="button">Infraestrutura</a>
+        <a href="#local" class="button">Localização</a>
     </nav>
-    <section id="imagem1"><img src="https://zoologico.guarulhos.sp.gov.br/img/about.png" alt=""></section>
-    <article>
+    <a href="#head" id="headbutton"><img src="https://i.pinimg.com/564x/f3/b6/bc/f3b6bc44d2c26e941fa75fd5e62ee11d.jpg" alt="head"></a>
+    <div id="home">
+        <img src="https://zoologico.guarulhos.sp.gov.br/img/about.png" alt="logo">
         <p>
             &nbsp;&nbsp;O Zoológico Municipal de Guarulhos, criado em 1981, mantém cerca de 
             400 animais de 100 diferentes espécies, priorizando a fauna nacional 
@@ -139,79 +122,274 @@
             constantes, tanto preventivos como curativos, por uma equipe de biólogos, 
             veterinários e tratadores, incumbidos na manutenção de sua saúde e bem estar.
         </p>
-    </article>
-    <section id="separador">
-        <section ></section>
-        <h1 id="infra">Infraestrutura</h1>
-    </section>
-    <article class="container">
-        <img src="https://www.unavets.com/zoo/wp-content/uploads/sites/9/2021/07/About-Us_3-786x524.jpg" alt="Foto da clínica" id="imagem2">
-        <p class="texto">
-            <br><br>&nbsp;&nbsp;A clínica veterinária do zoológico da cidade de Guarulhos é uma instalação 
-            dedicada ao cuidado e tratamento de animais selvagens e exóticos que vivem 
-            no zoológico. Equipado com tecnologia moderna e uma equipe de veterinários 
-            especializados, o local oferece atendimento médico, cirúrgico e de reabilitação 
-            para diversas espécies. Além disso, a clínica desempenha um papel crucial na 
-            conservação e bem-estar dos animais, realizando exames, tratamentos preventivos 
-            e intervenções de emergência quando necessário.
-        </p>
-        <p class="texto">
-            <br><br>&nbsp;&nbsp;O laboratório do zoológico de Guarulhos é uma instalação dedicada à pesquisa 
-            e análise de amostras biológicas dos animais do zoológico. Equipado com modernos 
-            instrumentos científicos, o laboratório realiza exames e testes que auxiliam no 
-            diagnóstico de doenças, monitoramento da saúde e desenvolvimento de programas de 
-            conservação das espécies. A equipe técnica, composta por biólogos e veterinários, 
-            trabalha para garantir o bem-estar dos animais, apoiando os esforços de preservação 
-            e cuidados médicos no zoológico.
-        </p>
-        <img src="https://imagens.usp.br/wp-content/uploads/laboratoriofotomarcossantos025.jpg" alt="Foto do laboratório" id="imagem2">
-        <img src="https://www.carpemundi.com.br/wp-content/uploads/2023/01/amazo-2.jpg" alt="Praça de alimentação" id="imagem2">
-        <p class="texto">
-            <br><br>&nbsp;&nbsp;A praça de alimentação do zoológico de Guarulhos é um espaço 
-            acolhedor e bem equipado, projetado para oferecer uma variedade de opções 
-            gastronômicas aos visitantes. Com mesas ao ar livre e áreas sombreadas, o local 
-            permite que os frequentadores desfrutem de suas refeições em meio à natureza, 
-            enquanto apreciam a vista do zoológico. A praça conta com quiosques que servem 
-            lanches, bebidas e refeições rápidas, atendendo a diferentes gostos e preferências, 
-            proporcionando um momento de descanso e convivência durante o passeio pelo zoológico.
-        </p>
-    </article>
-    <section>
-        <section id="separador">
-            <section ></section>
-            <h1 id="animais">Animais</h1>
-        </section>
-        <article class="container">
-            <img src="https://www.worldanimalprotection.org.br/cdn-cgi/image/width=1320,format=auto/contentassets/6ff9801ac877436ba5cd843bfdb18424/onca-pintada-mostrando-seus-dentes.jpg" alt="onça" id="imagem3">
-            <p class="texto">
-                <br><br>&nbsp;&nbsp;A onça-pintada (Panthera onca) é o maior 
-                felino das Américas e o terceiro maior do mundo, depois do tigre e 
-                do leão. Este magnífico predador é conhecido por sua pelagem dourada 
-                com manchas pretas em forma de rosetas, que ajudam na camuflagem nas 
-                florestas densas, onde normalmente vive.
-            </p>
-            <img src="https://infonet.com.br/wp-content/uploads/2023/04/leoaracaju_vovoleo_fotoasn_270423.jpeg" alt="leão" id="imagem3">
-            <p class="texto">
-                <br><br>&nbsp;&nbsp;O leão (Panthera leo) é um dos maiores 
-                felinos do mundo e é conhecido como o "Rei da Selva". Possui uma 
-                pelagem amarelada, com os machos se destacando pela sua imponente juba.
-            </p>
-            <img src="https://smastr16.blob.core.windows.net/home/2024/04/lobo-05-3-1024x846.jpeg" alt="lobo-guará" id="imagem3">
-            <p class="texto">
-                <br><br>&nbsp;&nbsp;O lobo-guará (Chrysocyon brachyurus) é o maior canídeo da 
-                América do Sul, conhecido por suas longas pernas e pelagem 
-                avermelhada, o que lhe confere uma aparência elegante e distinta.
-            </p>
-        </article>
-    </section>
-    <section id="separador">
-        <section ></section>
-        <h1 id="local">Localização</h1>
-    </section>
-    <article id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.492085370984!2d-46.554932724995396!3d-23.442708078881445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4ffea13bf09%3A0xb8d85899781b01d4!2sZool%C3%B3gico%20Municipal%20de%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1724336192033!5m2!1spt-BR!2sbr" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </article>
+    </div>
+    <div id="animais">
+        <h1 class="titulo">Animais</h1>
+        <table>
+            <tr class="titulotable">
+                <td><h2>Aves</h2></td>
+                <td><h2>Répteis</h2></td>
+                <td><h2>Mamiferos</h2></td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid black;">
+                    <p>
+                        <img src="https://zoologico.guarulhos.sp.gov.br/img/coruja.JPG" alt="Coruja">
+                        <h3>Coruja-Buraqueira</h3>
+
+                        A coruja-buraqueira (Athene cunicularia) 
+                        é uma coruja pequena e de hábitos terrestres, 
+                        facilmente reconhecida por seus olhos grandes 
+                        e amarelos, e sua plumagem marrom com manchas brancas.
+                        <ul>
+                            <li>
+                                <strong>Distribuição:</strong> Encontrada em grande parte 
+                                das Américas, desde o Canadá até a Argentina, 
+                                com ampla presença no Brasil.
+                            </li>
+                            <li>
+                                <strong>Habitat:</strong> Vive em áreas abertas, como campos, 
+                                pastagens e até em zonas urbanas, utilizando
+                                buracos no solo para fazer seu ninho.
+                            </li>
+                            <li>
+                                <strong>Dieta:</strong> Alimenta-se de insetos, pequenos 
+                                roedores, anfíbios e até pequenos répteis, 
+                                caçando principalmente ao entardecer.
+                            </li>
+                            <li>
+                                <strong>Conservação:</strong> A coruja-buraqueira não está 
+                                atualmente ameaçada, mas sofre com a perda de 
+                                habitat devido à expansão agrícola e urbana.
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+                <td style="border-bottom: 3px solid black;">
+                    <p>
+                        <img src="https://zoologico.guarulhos.sp.gov.br/img/jacare.jpeg" alt="Jacaré">
+                        <h3>Jacaré-Do-Papo-Amarelo</h3>
+
+                        O jacaré-do-papo-amarelo (Caiman latirostris) é um dos répteis mais 
+                        comuns da América do Sul, conhecido por seu 
+                        focinho largo e a coloração amarelada na região do papo.
+                        <ul>
+                            <li>
+                                <strong>Distribuição:</strong> Encontrado em áreas de água doce ao longo da 
+                                América do Sul, especialmente no Brasil, Argentina, Paraguai e Bolívia.
+                            </li>
+                            <li>
+                                <strong>Habitat:</strong> Vive em rios, lagos, pântanos e manguezais, 
+                                preferindo águas calmas e de vegetação densa.
+                            </li>
+                            <li>
+                                <strong>Dieta:</strong> Carnívoro, alimenta-se de peixes, aves, 
+                                pequenos mamíferos e até carcaças de animais maiores.
+                            </li>
+                            <li>
+                                <strong>Conservação:</strong> A espécie está em situação de menor 
+                                preocupação, mas sofre com a destruição de habitat e a caça ilegal, 
+                                principalmente para a comercialização de sua pele.
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+                <td style="border-bottom: 3px solid black;">
+                    <p>
+                        <img src="https://zoologico.guarulhos.sp.gov.br/img/ON%C3%87A%20PINTADA.jpg" alt="Onça-Pintada">
+                        <h3>Onça-Pintada</h3>
+
+                        A onça-pintada (Panthera onca) é o maior felino das Américas, 
+                        com pelagem dourada e manchas pretas em forma de rosetas. 
+                        É uma excelente nadadora e caçadora, adaptada para viver 
+                        em florestas densas.
+                        <ul>
+                            <li>
+                                <strong>Distribuição:</strong> Vive principalmente na América do Sul, 
+                                especialmente na Amazônia, mas também é encontrada 
+                                em regiões da América Central e no México.
+                            </li>
+                            <li>
+                                <strong>Habitat:</strong> Prefere florestas densas e áreas 
+                                pantanosas, mas pode ser encontrada em savanas e matas ciliares.
+                            </li>
+                            <li>
+                                <strong>Dieta:</strong> Carnívora, alimenta-se de uma ampla variedade de 
+                                presas, como capivaras, veados, antas e até jacarés.
+                            </li>
+                            <li>
+                                <strong>Conservação:</strong> Considerada quase ameaçada, enfrenta 
+                                riscos devido à perda de habitat e à caça ilegal.
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid black;">
+                    <p>
+                        <img src="https://zoologico.guarulhos.sp.gov.br/img/Tucano_Toco.JPG" alt="Tucano-Toco">
+                        <h3>Tucano-Toco</h3>
+
+                        O tucano-toco (Ramphastos toco) é o maior e mais conhecido dos 
+                        tucanos, facilmente identificado por seu enorme bico laranja e 
+                        plumagem preta com peito branco.
+                        <ul>
+                            <li>
+                                <strong>Distribuição:</strong> Vive em diversas regiões da América do Sul, 
+                                incluindo florestas, savanas e áreas urbanas.
+                            </li>
+                            <li>
+                                <strong>Habitat:</strong> Prefere áreas de floresta tropical, mas também é encontrado 
+                                em cerrados e bordas de mata.
+                            </li>
+                            <li>
+                                <strong>Dieta:</strong> Onívoro, alimenta-se de frutas, insetos, pequenos vertebrados e ovos 
+                                de outras aves.
+                            </li>
+                            <li>
+                                <strong>Conservação:</strong> Considerado pouco preocupante, mas enfrenta riscos devido à perda de 
+                                habitat.
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+                <td style="border-bottom: 3px solid black;">
+                    <p>
+                        <img src="https://zoologico.guarulhos.sp.gov.br/img/jiboia.png" alt="Jiboia-Constritora">
+                        <h3>Jiboia-Constritora</h3>
+
+                        A jiboia-constritora (Boa constrictor) é uma grande serpente da América do Sul, 
+                        conhecida por sua habilidade de constrição.
+                        <ul>
+                            <li>
+                                <strong>Distribuição:</strong> Encontrada em diversos habitats na América 
+                                Central e do Sul, incluindo florestas tropicais, savanas e áreas semiáridas.
+                            </li>
+                            <li>
+                                <strong>Habitat:</strong> Prefere áreas com vegetação densa, 
+                                mas pode ser encontrada em regiões mais secas.
+                            </li>
+                            <li>
+                                <strong>Dieta:</strong> Carnívora, alimenta-se de pequenos ou médios animais.
+                            </li>
+                            <li>
+                                <strong>Conservação:</strong> Enfrenta ameaças locais devido à destruição de habitat e 
+                                captura para o comércio de animais.
+                            </li>
+                        </ul>
+                    </p>  
+                </td>
+                <td style="border-bottom: 3px solid black;">
+                    <p>
+                        <img src="https://zoologico.guarulhos.sp.gov.br/img/Lobo%20guar%C3%A1.JPG" alt="Lobo-Guará">
+                        <h3>Lobo-Guará</h3>
+
+                        O lobo-guará (Chrysocyon brachyurus) é o maior canídeo 
+                        da América do Sul, notável por suas longas pernas e pelagem avermelhada. 
+                        Ele desempenha um papel crucial no controle de pequenos mamíferos e na dispersão de sementes.
+                        <ul>
+                            <li>
+                                <strong>Distribuição:</strong> Encontrado principalmente no Brasil, Paraguai, Bolívia e Argentina.
+                            </li>
+                            <li>
+                                <strong>Habitat:</strong> Vive em campos abertos, cerrados e áreas de vegetação rasteira.
+                            </li>
+                            <li>
+                                <strong>Dieta:</strong> Onívoro, alimenta-se de pequenos mamíferos, frutas e raízes.
+                            </li>
+                            <li>
+                                <strong>Conservação:</strong> Considerado quase ameaçado devido à perda de habitat e atropelamentos.
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 3px solid black;">
+                    <p>
+                        <img src="https://zoologico.guarulhos.sp.gov.br/img/EMA.JPG" alt="Ema">
+                        <h3>Ema</h3>
+
+                        A ema (Rhea americana) é a maior ave não voadora da América do Sul, 
+                        conhecida por sua aparência imponente e pernas longas. Ela desempenha 
+                        um papel importante na dispersão de sementes e no controle de insetos.
+                        <ul>
+                            <li>
+                                <strong>Distribuição:</strong> Encontrada nas regiões abertas da América do Sul, 
+                                especialmente no Brasil, Argentina e Paraguai.
+                            </li>
+                            <li>
+                                <strong>Habitat:</strong> Prefere áreas de campo aberto, pastagens e regiões de vegetação rasteira.
+                            </li>
+                            <li>
+                                <strong>Dieta:</strong> Onívora, alimenta-se de sementes, frutas, insetos e pequenos animais.
+                            </li>
+                            <li>
+                                <strong>Conservação:</strong> A ema é considerada de menor preocupação, mas pode enfrentar 
+                                riscos locais devido à perda de habitat e caça.
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+                <td style="border-bottom: 3px solid black;">
+                    <p>
+                        <img src="https://zoologico.guarulhos.sp.gov.br/img/iguana-verde.jpg" alt="Iguana-Verde">
+                        <h3>Iguana-Verde</h3>
+
+                        A iguana-verde (Iguana iguana) é uma grande lagartixa 
+                        arbórea da América Central e do Sul, notável por sua pele 
+                        verde vibrante e corpo robusto.
+                        <ul>
+                            <li>
+                                <strong>Distribuição:</strong> Encontrada em florestas tropicais e 
+                                áreas arborizadas da América Central e do Sul, incluindo o Brasil e partes da América Central.
+                            </li>
+                            <li>
+                                <strong>Habitat:</strong> Prefere áreas de vegetação densa e árvores altas, onde pode se refugiar e se alimentar.
+                            </li>
+                            <li>
+                                <strong>Dieta:</strong> Herbívora, alimenta-se principalmente de folhas, frutas e flores.
+                            </li>
+                            <li>
+                                <strong>Conservação:</strong> Embora a espécie seja comum em seu habitat natural, 
+                                enfrenta ameaças como a perda de habitat e o comércio de animais de estimação.
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+                <td style="border-bottom: 3px solid black;">
+                    <p>
+                        <img src="https://zoologico.guarulhos.sp.gov.br/img/TATU%20BOLA.JPG" alt="Tatu-Bola">
+                        <h3>Tatu-Bola</h3>
+
+                        O tatu-bola (Tolypeutes tricinctus) é um pequeno mamífero da América do Sul, 
+                        conhecido por sua capacidade de se enrolar em uma esfera quando ameaçado. 
+                        Este comportamento o ajuda a se proteger de predadores.
+                        <ul>
+                            <li>
+                                <strong>Distribuição:</strong> O tatu-bola é encontrado principalmente no Brasil, 
+                                Paraguai e Argentina, onde habita regiões de cerrado e caatinga, 
+                                além de florestas secas.
+                            </li>
+                            <li>
+                                <strong>Habitat:</strong> Prefere áreas de cerrado, caatinga e florestas secas.
+                            </li>
+                            <li>
+                                <strong>Dieta:</strong> Onívoro, alimenta-se de insetos, pequenos invertebrados, frutas e raízes.
+                            </li>
+                            <li>
+                                <strong>Conservação:</strong> Considerado vulnerável devido à perda de habitat e caça.
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="infra">
+        <h1 class="titulo">Infraestrutura</h1>
+
+    </div>
 </body>
 </html>
