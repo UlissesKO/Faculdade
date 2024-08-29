@@ -7,7 +7,7 @@ int main()
 {
     #define DIAS_MES 30 //O # serve pra criar a constante aqui
 
-    char tipo1[30]; //Esta criando uma string chamada tipo com no m·ximo 30 letras
+    char tipo1[30]; //Esta criando uma string chamada tipo com no m√°ximo 30 letras
     int quantidade;
     float consumo_km;
     float km_dia;
