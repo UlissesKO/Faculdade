@@ -66,6 +66,7 @@
             border-bottom: 5px solid rgb(51, 161, 7);
             text-align: center;
             border-radius: 10px;
+            clear: both;
         }
         table{
             width: 100%;
@@ -78,6 +79,7 @@
             border-width: 0 3px;
             border-color: black;
             border-style: solid;
+            border-radius: 20px;
         }
         table .titulotable td{
             text-align: center;
@@ -98,24 +100,42 @@
         }
         #esquerda{
             float: left;
-            width: 45%;
-            background-color: rgb(255, 255, 255);
+            width: 47%;
+            background-color: rgba(255, 255, 255, 0.827);
             padding: 10px;
+            height: 800px;
+            border-radius: 50px;
+            margin: 5px;
         }
-        #esquerda img{
+        #esquerda img, #direita img{
             float: left;
-            margin: 10px;
+            margin: 20px;
             border: 2px rgb(0, 79, 124) dotted;
             border-radius: 50px;
+            width: 50%;
         }
-        #esquerda p{
-            padding: 50px;
+        #esquerda p, #direita p{
+            padding: 30px;
+        }
+        .img2{
+            width: 90% !important;
         }
         #direita{
             float: right;
-            width: 45%;
-            background-color: rgb(255, 255, 255);
+            width: 47%;
+            background-color: rgba(255, 255, 255, 0.827);
             padding: 10px;
+            height: 800px;
+            border-radius: 50px;
+            margin: 5px;
+        }
+        #local{
+            text-align: center;
+        }
+        #local iframe{
+            margin: 20px;
+            width: 75%;
+            border-radius: 50px;
         }
     </style>
     <meta charset="UTF-8">
@@ -421,19 +441,46 @@
                 além de contribuir para a conservação e 
                 educação sobre bem-estar animal.
             </p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBX7rP-GKki7I1RvdlFoLMRe5qkNHjLCbvDA&s" alt="clinica">
+            <img src="https://unifor.br/documents/392172/562305/nubex-rebioterio-laboratorio-pesquisa-animais-unifor-foto-ares-soares.jpg/fccc35ce-3404-ede2-8270-7cca0b8b7892?t=1551201742490" alt="Biotério" class="img2">
             <p>
-                &nbsp;&nbsp;A Clínica Veterinária do Zoológico de 
-                Guarulhos é um centro especializado em 
-                cuidar da saúde dos animais do parque. 
-                Com tecnologia avançada e uma equipe 
-                experiente, oferece diagnósticos, 
-                tratamentos e procedimentos cirúrgicos, 
-                além de contribuir para a conservação e 
-                educação sobre bem-estar animal.
+                &nbsp;&nbsp;O Biotério do Zoológico de Guarulhos é 
+                uma instalação crucial para a manutenção e o cuidado 
+                de pequenos animais utilizados em pesquisas e 
+                programas de conservação. Nele, são mantidos 
+                espécimes em condições controladas, garantindo sua 
+                saúde e bem-estar. Além de ser um local de apoio 
+                para estudos científicos, o biotério também desempenha 
+                um papel importante no manejo e reabilitação de 
+                animais do zoológico, contribuindo para a preservação 
+                de espécies ameaçadas e para a educação ambiental.
             </p>
         </div>
-        <div id="direita"></div>
+        <div id="direita">
+            <img src="https://s3.glbimg.com/v1/AUTH_35862ca5c6ab48b992baf1f1b4f7062e/m-extra-globo-com/incoming/22744393-d16-9bd/w488h275-PROP/elefantes-observacao_ps_07_2017-07-03.jpg" alt="Zona de observação" class="img2">
+            <p>
+                &nbsp;&nbsp;As Zonas de Observação do Zoológico 
+                de Guarulhos foram projetadas para proporcionar aos 
+                visitantes uma experiência imersiva e segura. Cada 
+                área é estrategicamente posicionada para oferecer 
+                vistas privilegiadas dos habitats dos animais, 
+                permitindo uma observação próxima e detalhada, 
+                sem interferir no comportamento natural das espécies.
+                Com estruturas elevadas, vidros panorâmicos e espaços 
+                amplos, as zonas garantem acessibilidade e conforto, 
+                além de promover a educação ambiental ao destacar 
+                informações sobre a conservação das espécies observadas.
+            </p>            
+            <img src="https://96fmbauru.com.br/wp-content/uploads/2024/03/3b656c3f50a9b81956d98133e62b4982.webp" alt="Praça-Alimentação">
+            <p>
+                &nbsp;&nbsp;A Praça de Alimentação do Zoológico de Guarulhos oferece 
+                lanches e refeições em um ambiente agradável, com mesas ao ar livre 
+                para os visitantes descansarem em meio à natureza.
+            </p>
+        </div>
+    </div>
+    <div id="local">
+        <h1 class="titulo">Localização</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.4920847859416!2d-46.552357799999996!3d-23.442708099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4ffea13bf09%3A0xb8d85899781b01d4!2sZool%C3%B3gico%20Municipal%20de%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1724940983868!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </body>
 </html>
