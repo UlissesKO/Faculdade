@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title><!--O * fala que vai mexer em todas as tags-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: darkgoldenrod;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        nav{
+            background-color: rgb(231, 170, 16);
+            width: 15%;
+            padding: 15px;
+        }
+        #container{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            margin-top: 58px;
+        }
+        main{
+            background-color: darkgray;
+            flex-grow: 1;
+        }
+        footer{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <header><!--Tag pra html semantico, msm coisa da div-->
+        Cabeçalho
+    </header>
+    <div id="container">
+        <nav>Menu</nav>
+        <main>Conteudo</main><!--Tag para o conteudo, html semantico-->
+    </div>
+    <footer>Rodapé</footer>
+    <!--
+        Tags semanticas:
+        header - cabeçalho
+        nav - menu
+        main - conteudo
+        article
+        aside
+        section
+        footer - rodapé
+    -->
+</body>
+</html>
