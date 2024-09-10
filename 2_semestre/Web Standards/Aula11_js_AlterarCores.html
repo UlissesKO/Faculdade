@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">      <!--onchange é o evento de quando troca a opção. Vai executar tudo nas aspas-->
+        <select name="cores" onchange="trocaCor()"> <!--Combobox-->
+            <option value="white">Branco</option><!--Opções do combobox-->
+            <option value="aqua">Aqua</option>
+            <option value="red">Vermelho</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="grey">Cinza</option>
+        </select>
+    </form>
+    <script> //Esse pedaço vai executar sempre quando a página carregar
+        function trocaCor() //Esta criando uma função para trocar a cor do background com base na combobox
+        {               //Cada . representa um "andar" do código
+            var cor = document.form1.cores.value; //Isso aqui vai retornar o valor da option selecionada
+                        //value de cores que ta dentro de form1 que ta dentro do document
+            document.form1.cores.style.backgroundColor = cor;//Edita a backgroundColor do do cores dentro de forms1
+        }
+        
+        
+    </script>
+</body>
+</html>
