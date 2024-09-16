@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //Função para enviar a mensagem entre as páginas
+        function enviar()
+        {                       //Função para pegar o valor de um elemento pelo seu id
+            var mensagem = document.getElementById("mensagem").value;
+            
+                                    //Vai juntar aqui e mandar a mensagem na url
+            window.location.href = "C:\\Users\\usrlab13n\\Documents\\Aula12_js_hash2.html#" + mensagem;
+            //location é um "irmao" do document, com suas propriedades, igual o document
+
+            document.form1.submit() //Função enviar do form
+            
+            //Não é um método nada seguro para enviar informações
+        }
+    </script>
+</head>
+<body>
+    <h1>Mensagem Entre páginas</h1>
+    <form id="form1">
+        Digite algo:
+        <input type="text" id="mensagem">
+        <input type="button" value="Enviar" onclick="enviar()">
+    </form>
+</body>
+</html>
