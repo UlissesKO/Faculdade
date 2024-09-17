@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function verificar()
+        {
+            var nome = document.getElementById("txtNome").value;
+            var idade = document.getElementById("txtIdade").value; //Puxa os valores dos inputs
+            var email = document.getElementById("txtEmail").value;
+                                //.trim tira todos os espaços da string
+            if(nome.length < 3 || nome.trim() == "") //Aqui tem todas as validações lógicas
+            {   //Vai selecionar os elementos a partir da query, pode buscar por id, classe, etc
+                document.querySelector("#erroNome").textContent = "Nome inválido"; //Buscando pelo id 
+                                                                //textContent é o conteúdo da tag
+            }
+                                   //isNaN é is Not a Number, se tiver letra ele retorna true
+            if(idade.length == 0 || isNaN(idade))
+            {
+                document.querySelector("#erroIdade").textContent = "Idade inválida";
+            }
+                //indexOf é pra achar o caractere determinado na string
+            if(email.indexOf("@") < 0)
+            {
+                document.querySelector("#erroEmail").textContent = "Email Inválida"
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="grava.jsp" name="form1">
+        <fieldset> <!--Separa as categorias do formulário-->
+            <legend>Cadastro</legend>
+    
+            <label for="txtNome">Nome:</label><!--Pra escrever na tela o titulo do campo do input-->
+            <input type="text" name="txtNome" id="txtNome">
+            <span id="erroNome"></span><!--É uma tag pra poder escrever mais tarde com o js-->
+            <br><br>
+            
+            <label for="txtIdade">Idade :</label>
+            <input type="text" name="txtIdade" id="txtIdade">
+            <span id="erroIdade"></span>
+            <br><br>
+
+            <label for="txtEmail">Email:</label>
+            <input type="text" name="txtEmail" id="txtEmail">
+            <span id="erroEmail"></span>
+            <br><br>
+
+            <input type="button" value="Enviar" onclick="verificar()">
+        </fieldset>
+    </form>
+</body>
+</html>
