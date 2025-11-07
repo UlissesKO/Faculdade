@@ -1,0 +1,60 @@
+package main;
+
+import java.util.Scanner; //Para fazer os inputs
+
+//O nome da classe tem que ser o nome do arquivo
+public class main {
+	public static void main(String[] args) {
+
+		int opc = 0; //Variavel para setar as escolhas do menu
+
+		// criando o objeto da classe Scanner (entrada de dados)
+		Scanner entrada = new Scanner ( System.in );
+
+		// criando o objeto da classe Conta
+		conta conta1 = new conta();
+
+		// entrada de dados
+		System.out.print("Digite o Número da Conta: ");
+		conta1.setNro_Conta(entrada.nextInt());
+
+		System.out.print("Digite a agência: ");
+		conta1.setAgencia(entrada.nextInt());
+
+		System.out.print("Digite o Nome: ");
+		conta1.setNome(entrada.next());
+
+		System.out.print("Digite o saldo da conta: ");
+		conta1.setSaldo(entrada.nextFloat());
+
+        // menu
+		while ( opc <= 4) {
+			System.out.println("========== Escolha a opção ========= ");
+			System.out.println("[ 1 ] - Mostrar os dados da Conta");
+			System.out.println("[ 2 ] - Depositar na Conta");
+			System.out.println("[ 3 ] - Sacar dinheiro da Conta");
+			System.out.println("[ 4 ] - Encerrar o programa");
+			System.out.print("Escolha sua opção: ");	
+			opc = entrada.nextInt();
+			
+			//Como o match case do Python
+			switch (opc) {
+			case 1:
+				conta1.MostrarDados();
+				break; //Pula os próximos cases
+			case 2:
+				System.out.print("Quanto quer sacar? ");
+				conta1.Sacar(entrada.nextFloat());
+				break;
+			case 3:
+				System.out.print("Quanto quer depositar? ");
+				conta1.Depositar(entrada.nextFloat());
+				break;
+			case 4:
+				System.out.println("Acabou-se o que era doce!");
+				break;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,20 @@
+package heranca;
+
+import javax.swing.JOptionPane;
+
+//extends seta que vai herdar tudo que é public ou protected da classe pai
+//classeFilha extends classePai
+public class Fisica extends Pessoa {
+	//Aqui é private pois essa classe já é esperada que seja o último "nó" das classes
+	private String cpf,sex;
+	
+	public void setCpf(String _cpf) {this.cpf = _cpf;}
+	public void setSex(String _sex) {this.sex = _sex;}
+	
+	public String getCpf() {return this.cpf;}
+	public String getSex() {return this.sex;}
+	
+	public void MostrarDados() {
+		JOptionPane.showMessageDialog(null, "====Dados da Pessoa===="+"\n- Nome: "+this.getName()+"\n- Telefone: "+this.getPhone()+"\n- E-mail: "+this.getMail()+"\n- CPF: "+this.getCpf()+"\n- Sexo: "+this.getSex());
+	}
+}

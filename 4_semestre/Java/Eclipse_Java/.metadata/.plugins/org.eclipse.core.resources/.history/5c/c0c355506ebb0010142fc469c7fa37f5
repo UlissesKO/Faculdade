@@ -1,0 +1,13 @@
+package heranca;
+
+//extends seta que vai herdar tudo que é public ou protected da classe pai
+//classeFilha extends classePai
+public class Fisica extends Pessoa {
+	private String cpf,sex;
+	
+	public void setCpf(String _cpf) {this.cpf = _cpf;}
+	public void setSex(String _sex) {this.sex = _sex;}
+	
+	public String getCpf() {return this.cpf;}
+	public String getSex() {return this.sex;}
+}

@@ -1,0 +1,7 @@
+package heranca;
+
+public class Juridica extends Pessoa {
+	private String cnpj, IE;
+	
+	
+}

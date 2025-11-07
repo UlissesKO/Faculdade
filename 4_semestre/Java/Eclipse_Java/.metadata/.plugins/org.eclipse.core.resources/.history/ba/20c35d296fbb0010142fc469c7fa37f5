@@ -1,0 +1,18 @@
+package heranca;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	public static void main(String[] args) {
+		String data;
+		
+		Pessoa pes1 = new Pessoa();
+		
+		data = JOptionPane.showInputDialog("Digite o nome: ");
+		pes1.setName(data);
+		
+		pes1.setPhone(JOptionPane.showInputDialog("Digite o telefone: "));
+		
+		pes1.setMail(JOptionPane.showInputDialog("Digite o E-mail: "));
+	}
+}
