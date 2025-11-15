@@ -1,9 +1,8 @@
 package construtor_heranca;
 
-public class Associados {
-	//Perguntar se não seria protected
-	private int id;
-	private String nome, logradouro, numero, cep, bairro, cidade, uf, telefone, cpf_cnpj;
+public class Pessoa {
+	protected int id;
+	protected String nome, logradouro, numero, cep, bairro, cidade, uf, telefone, cpf_cnpj;
 
 	public int getId() { return this.id; }
 	public String getNome() { return this.nome; }
@@ -30,7 +29,7 @@ public class Associados {
 	//Metodo construtor (PRECISA TER O MESMO NOME DA CLASSE)
 	//A classe que vai ser chamada depende dos parametros, não dá conflito de nome
 	//Sem parametros
-	public Associados() {
+	public Pessoa() {
 		//Inicia as variaveis da instancia (Objetos) vazias
 		this.setId(0);
 		this.setNome(" - ");
@@ -44,7 +43,7 @@ public class Associados {
 		this.setCpfCnpj(" - ");
 	}
 	//COM parametros
-	public Associados(int _id, String _nome, String _logra, String _num, String _cep, String _bairro, String _cidade, String _uf, String _tel, String _doc) {
+	public Pessoa(int _id, String _nome, String _logra, String _num, String _cep, String _bairro, String _cidade, String _uf, String _tel, String _doc) {
 		//Inicia as variaveis da instancia (Objetos) com os parametros já setados
 		this.setId(_id);
 		this.setNome(_nome);
@@ -58,6 +57,7 @@ public class Associados {
 		this.setCpfCnpj(_doc);
 	}
 	
+		
 	public void MostrarDados() {
 		System.out.println("------Dados------");
 		System.out.println("ID: " + this.id);
