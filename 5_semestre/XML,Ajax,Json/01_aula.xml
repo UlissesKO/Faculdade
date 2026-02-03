@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--Espaço para comentario-->
+<Playlist><!--Elemento Raiz - Grupo geralzão -->
+
+            <!-- id nesse caso é um atributo -->
+    <Musica id = "01"> <!--Elemento Complexo - Item (Musicas em uma playlist) -->
+        
+        <nome>People are Strange</nome> <!--Elemento Simples - Caracteristicas do elemento -->
+        
+        <banda>The Doors</banda>
+    
+    </Musica>
+
+</Playlist>
