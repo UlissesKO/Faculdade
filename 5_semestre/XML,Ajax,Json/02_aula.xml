@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<formandos ano = "2025"> <!-- Elemento Raiz -->
+    <Cursos> <!-- Elemento complexo -->
+        <EDC><!-- Segundo elemento complexo -->
+            <Aluno ra = "001"><!-- Terceiro elemento complexo -->
+                <nome>Ulisses</nome><!-- Elemento simples -->
+            </Aluno>
+            <Aluno ra = "002">
+                <nome>Joao</nome>
+            </Aluno>
+        </EDC>
+        <Med>
+            <Aluno ra = "001">
+                <nome>Ulisses</nome>
+            </Aluno>
+            <Aluno ra = "002">
+                <nome>Joao</nome>
+            </Aluno>
+        </Med>
+    </Cursos>
+</formandos>

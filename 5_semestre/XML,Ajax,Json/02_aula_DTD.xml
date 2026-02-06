@@ -1,0 +1,23 @@
+<?sml version = "1.0" encoding = "UTF-8" standalone = "yes"?>
+
+<!--O DTD vai setar qual tipo de dado o item pode receber-->
+<!DOCTYPE pessoas 
+[ 
+    <!ELEMENT contato (nome, telefone)>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT telefone (#PCDATA)>
+
+    <!ELEMENT empresa (nomeEmpresa)>
+    <!ELEMENT nomeEmpresa (#PCDATA)> <!--#PCDATA é qualquer tipo de dado-->
+]> <!-- É possível criar um arquivo com extensão .dtd somente com o DOCTYPE-->
+        <!-- Isso vai funcionar como uma função de programação -->
+
+<pessoas> <!-- Raiz -->
+    <contato codigo = "001"> <!-- Complexo -->
+        <nome>Ulisses</nome> <!-- Simples -->
+        <telefone>1234567890</telefone>
+    </contato>
+    <empresa>
+        <nomeEmpresa>Testando</nomeEmpresa>
+    </empresa>
+</pessoas>
