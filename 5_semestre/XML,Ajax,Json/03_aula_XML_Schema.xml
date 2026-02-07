@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> <!-- Seta o criador do Schema -->
+
+    <!-- Elemento raiz no model XSD (XML Schema Definition) -->
+    <xs:element name="Funcionario">
+        <!-- Elemento complexo -->
+        <xs:complexType>
+            <xs:sequence><!-- Aponta que vai vir uma sequencia de elementos -->
+                <!-- Elementos simples -->
+                <xs:element name="nome" type="xs:string"/>
+                <xs:element name="empresa" type="xs:string"/>
+                <xs:element name="idade" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Conteúdo do XML em si -->
+    <Funcionario>
+        <nome>Ulisses</nome>
+        <empresa>Eniac</empresa>
+        <idade>20</idade>
+    </Funcionario>
+<!--xs:schema tem tag de fechamento-->
+</xs:schema>
