@@ -1,0 +1,6 @@
+Criar o projeto
+    ng new <nome_projeto>
+
+Rodar o app angular
+    ng serve -o 
+            ( -o abre o browser automaticamente )
