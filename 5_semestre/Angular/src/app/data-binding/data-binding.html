@@ -1,0 +1,41 @@
+<h3>Data Binding / Interpolação</h3>
+<!-- Adiciona funcoes de programacao diretamente no HTML-->
+
+<h4>Sumemo, {{nome}}</h4> <!-- {{}} -> Serve para importar uma variável do typescript -->
+            <!-- Veio do arquivo data-binding.ts -->
+
+<h4>7 + 2 = {{7 + 2}}</h4>
+
+<hr />
+
+<!-- style.color está dizendo qual tag css quer que a var seja aplicada-->
+<h3 [style.color]="cor_texto">Data Binding - Propriedades</h3>
+<!-- Altera diretamente as propriedades das tags -->
+
+<img [src]="img" [width]="larg">
+<br>
+
+<button [disabled]="disab">Mostrar foto</button>
+<!-- Para fazer vinculação de propriedades, utiliza []-->
+
+<br>
+<hr />
+
+<h3>Data Binding - Eventos</h3>
+
+<p>Quantos cliques: {{ cont }}</p>
+<button (click)="contar()" [disabled]="disab02"> Clique aqui </button>
+<!-- Para fazer a vinculação de eventos, utiliza () -->
+<!-- Para chamar uma função, precisa ter o (), como em programação-->
+
+<button (click)="reset()" [disabled]="disab03"> Resetar contagem </button>
+<br><br>
+
+<div 
+[style.backgroundColor]="cor_fundo" 
+style="width: 100px;"
+(mouseover)="muda_cor('red')"
+(mouseout)="muda_cor('blue')">
+    Passe o mouse aqui
+</div>
+<!-- mouseover e mouseout são eventos de quando o mouse passa pelo elemento -->
