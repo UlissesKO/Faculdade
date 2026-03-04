@@ -1,12 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
-import { Comp1 } from './componentes/comp1/comp1'; //Importa o componente para o app reconhecer
-import { Comp2 } from './componentes/comp2/comp2';
+import { DataBinding } from "./data-binding/data-binding";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Comp1, Comp2], //Precisa colocar os Comp* no imports
+  imports: [RouterOutlet, DataBinding],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

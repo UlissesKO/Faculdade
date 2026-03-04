@@ -4,3 +4,10 @@ Criar o projeto
 Rodar o app angular
     ng serve -o 
             ( -o abre o browser automaticamente )
+
+Criar um componente novo
+    Acessa a pasta src/app/componente (Precisa criar a ultima)
+        Roda 
+            ng generate componente <nome_componente>
+                    OU
+            ng g        c          <nome_componente>
