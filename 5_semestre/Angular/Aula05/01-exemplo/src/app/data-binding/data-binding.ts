@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-data-binding',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './data-binding.html',
   styleUrl: './data-binding.css',
 })
@@ -35,11 +36,19 @@ export class DataBinding {
     this.disab03 = true
   }
 
-  cor_fundo:string = "blue"
+  cor_hover:string = "blue"
 
   muda_cor(nova_cor:string) {
-    this.cor_fundo = nova_cor;
+    this.cor_hover = nova_cor;
   } 
 
+  cor_texto02:string = "yellow"
 
+  valorInicial:number = 0;
+  taxaJuros:number = 0/10;
+
+    //Se deve colocar o tipo da função caso retorne algum valor
+  totalEstimado():number {
+    return this.valorInicial + (this.valorInicial * this.taxaJuros)
+  }
 }

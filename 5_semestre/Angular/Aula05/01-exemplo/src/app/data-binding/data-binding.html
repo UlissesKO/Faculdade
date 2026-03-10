@@ -1,4 +1,5 @@
 <h3>Data Binding / Interpolação</h3>
+<h4>Altera propriedades e coloca as variáveis no HTML</h4>
 <!-- Adiciona funcoes de programacao diretamente no HTML-->
 
 <h4>Sumemo, {{nome}}</h4> <!-- {{}} -> Serve para importar uma variável do typescript -->
@@ -22,6 +23,7 @@
 <hr />
 
 <h3>Data Binding - Eventos</h3>
+<h4>Gerencia os eventos (cliques, passar o mouse, etc)</h4>
 
 <p>Quantos cliques: {{ cont }}</p>
 <button (click)="contar()" [disabled]="disab02"> Clique aqui </button>
@@ -32,10 +34,39 @@
 <br><br>
 
 <div 
-[style.backgroundColor]="cor_fundo" 
+[style.backgroundColor]="cor_hover" 
 style="width: 100px;"
 (mouseover)="muda_cor('red')"
 (mouseout)="muda_cor('blue')">
     Passe o mouse aqui
 </div>
 <!-- mouseover e mouseout são eventos de quando o mouse passa pelo elemento -->
+
+<br><hr />
+<h3>Data Binding - Two Way</h3>
+<h4>Quando se utiliza um input do usuário para fazer outra coisa no mesmo código</h4>
+Digite uma cor em inglês
+<input type="text" [(ngModel)]="cor_texto02">
+<br><br>
+<div [style.color] = "cor_texto02">
+    Um texto é uma unidade de linguagem em uso, escrita ou falada, dotada de sentido, 
+    coesão e coerência, que cumpre uma função sociocomunicativa. Pode ser composto 
+    por palavras (verbal), imagens/sons (não verbal) ou ambos (misto), variando em 
+    gêneros (narrativo, descritivo, etc.) para transmitir mensagens e interagir socialmente.
+</div>
+<hr />
+
+<h2>Calculadora de Investimento</h2>
+<div id="calc">
+    <div class="grupo">
+        <label>Valor do Investimento (R$): </label>
+        <input type="number" [(ngModel)]="valorInicial">
+    </div>
+    <div class="grupo">
+        <label>Taxa de Juros: </label>
+        <input type="number" [(ngModel)]="taxaJuros">
+    </div>
+    <div class="grupo">
+        <h4>Resultado Estimado: {{ totalEstimado() }}</h4>
+    </div>
+</div>
