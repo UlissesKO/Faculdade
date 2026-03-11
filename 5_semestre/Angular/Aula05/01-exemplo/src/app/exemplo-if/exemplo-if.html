@@ -1,0 +1,23 @@
+<hr /><hr />
+<h1>Diretivas - Loop IF</h1>
+<h3> {{ titulo }}</h3>
+
+<h4>Forma Antiga</h4>
+<!--//\\VERSÃO ANTIGA//\\-->
+<!-- Uso do If-Else -->
+<div *ngIf=" mostra ; then Conteudo01 ; else Conteudo02"></div>
+
+<!-- Conteúdos que serão mostrados a depender da lógica If-Else -->
+<ng-template #Conteudo01>
+    Texto 01<br>
+</ng-template>
+<ng-template #Conteudo02>
+    Texto 02<br>
+</ng-template>
+
+<h4>Forma Nova</h4>
+@if ( mostra ) {
+    <div>Conteúdo 01</div>
+} @else {
+    <div>Conteúdo 02</div>
+}
