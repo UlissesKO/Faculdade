@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mensagens com Jquery</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!--"Importando" a biblioteca do jquery online-->
+        <!--Caso for local, basta colocar o path do arquivo-->
+    </head>
+    <body>
+        <div id="mensagem01">Teste</div>
+        <div id="mensagem02">Teste</div>
+        <script type="text/Javascript">
+            //Uso do JQuery
+            $("#mensagem01").html("Escrito a partir do JQuery!")
+            //$ -> Chama o JQuery
+            //(#mensagem01) -> Seletor. (Um ID no caso)
+            //.html() -> Função JQuery. (Edita um elemento HTML)
+
+            //Uso do Javascript
+            document.getElementById("mensagem02").innerHTML = "Escrito a partir do Javascript"
+        </script>
+    </body>
+</html>

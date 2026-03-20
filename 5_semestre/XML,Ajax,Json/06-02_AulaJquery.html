@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esconder elementos</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        //$(document) -> Vai carregar junto com a página HTML
+        $(document).ready(function(){
+            //$("p") -> Seleciona todas as tags p da página
+            //.hide() -> Executa a ação de esconder
+            $("p").hide();
+            $(".mostrar").click(function () {
+                $("p").show();
+            });
+            $(".esconder").click(function() {
+                $("p").hide();
+            })
+        })
+    </script>
+</head>
+<body>
+    <a href="#" class="mostrar">Mostrar</a><br><hr>
+    <a href="#" class="esconder">Esconder</a><br><hr><br><br>
+    <p>Eu sou o melhor jogador de futebol do meu quarto!!</p>
+</body>
+</html>

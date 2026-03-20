@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Usando AJax</title>
+        <script type="text/javascript">
+            function buscarCEP(){
+                var cep = document.getElementById("cep").value;
+                var url = "https://viacep.com.br/ws/"+cep+"/json";
+                var obj = new XMLHttpRequest();
+                obj.open('GET', url, true)
+                obj.onreadystatechange = function () {
+                    //4 quer dizer que o retorno deu certo
+                    if (obj.readyState == 4 && obj.status == 200){
+                        console.log(obj);
+                        console.log(obj.responseText);
+                        var dados_obj = JSON.parse(obj.responseText);
+                        console.log(dados);
+
+                        document.getElementById("bairro").value = dados_obj.bairro;
+                        document.getElementById("cidade").value = dados_obj.localidade
+                    }
+                }
+                obj.send();
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Buscar endereço pelo CEP</h2><br>
+        <form name="endereco">
+            CEP:<br>
+            <input type="text" id="cep" name="cep">
+            <input type="button" value="Buscar" onclick="buscarCEP()">
+            <hr>
+            Bairro<br>
+            <input type="text" id="bairro">
+            Cidade<br>
+            <input type="text" id="cidade">
+        </form>
+
+    </body>
+</html>
