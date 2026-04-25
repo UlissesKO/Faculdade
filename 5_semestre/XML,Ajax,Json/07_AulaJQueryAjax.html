@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Ajax a partir do Jquery</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.j">
+        $(document).ready(function(){
+            $("#buscar").click(function(){
+                var cep = $("#txtcep").val(); //Pega o valor presente no input txtcep
+                var url = "https://viacep.com.br/ws/"+cep+"/json/";
+                //Solicitação ajax através do JQuery
+                $.ajax({url:url, type:'GET', dataType:'json'}).done(function(resposta){
+                    $("#bairro").val(resposta.bairro);
+                    console.log(resposta)
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <h3>Ajax com JQuery</h3>
+    CEP: 
+    <input type="text" id="txtcep"><br>
+    <button id="buscar">Buscar</button><button id="limpar">Limpar</button>
+    Bairro:
+    <input type="text" id="bairro"><br>
+</body>
+</html>

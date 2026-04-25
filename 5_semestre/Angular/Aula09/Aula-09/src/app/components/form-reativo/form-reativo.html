@@ -1,0 +1,17 @@
+<h3>Formulário Reativo</h3>
+
+<form [formGroup]="form">
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" formControlName="nome">
+    <span>Nome é obrigatório</span><br>
+    
+    <label for="email">E-mail: </label>
+    <input type="email" id="email" formControlName="email">
+    <span>Email é inválido</span><br>
+    
+    <label for="idade">Idade: </label>
+    <input type="idade" id="idade" formControlName="idade">
+    <span>Idade deve ser maior ou igual a 1</span><br>
+
+    <button type="submit" [disabled]="form.invalid">Enviar</button>
+</form>
