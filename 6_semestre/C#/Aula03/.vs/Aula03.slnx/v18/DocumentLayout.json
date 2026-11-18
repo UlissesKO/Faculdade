@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Aula03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B41F7A0-C93C-4599-86EA-E2ADDAFCB434}|Aula03\\Aula03.csproj|c:\\users\\uliss\\onedrive\\documentos\\codigos\\repositorios\\faculdade\\6_semestre\\c#\\aula03\\aula03\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0B41F7A0-C93C-4599-86EA-E2ADDAFCB434}|Aula03\\Aula03.csproj|solutionrelative:aula03\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B41F7A0-C93C-4599-86EA-E2ADDAFCB434}|Aula03\\Aula03.csproj|c:\\users\\uliss\\onedrive\\documentos\\codigos\\repositorios\\faculdade\\6_semestre\\c#\\aula03\\aula03\\menuprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B41F7A0-C93C-4599-86EA-E2ADDAFCB434}|Aula03\\Aula03.csproj|solutionrelative:aula03\\menuprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B41F7A0-C93C-4599-86EA-E2ADDAFCB434}|Aula03\\Aula03.csproj|c:\\users\\uliss\\onedrive\\documentos\\codigos\\repositorios\\faculdade\\6_semestre\\c#\\aula03\\aula03\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B41F7A0-C93C-4599-86EA-E2ADDAFCB434}|Aula03\\Aula03.csproj|solutionrelative:aula03\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B41F7A0-C93C-4599-86EA-E2ADDAFCB434}|Aula03\\Aula03.csproj|c:\\users\\uliss\\onedrive\\documentos\\codigos\\repositorios\\faculdade\\6_semestre\\c#\\aula03\\aula03\\resources\\cadfunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B41F7A0-C93C-4599-86EA-E2ADDAFCB434}|Aula03\\Aula03.csproj|solutionrelative:aula03\\resources\\cadfunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuPrincipal.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Aula03\\Aula03\\MenuPrincipal.cs",
+              "RelativeDocumentMoniker": "Aula03\\MenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Aula03\\Aula03\\MenuPrincipal.cs [Projeto]*",
+              "RelativeToolTip": "Aula03\\MenuPrincipal.cs [Projeto]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T00:09:45.69Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CadFunc.cs",
+              "DocumentMoniker": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Aula03\\Aula03\\Resources\\CadFunc.cs",
+              "RelativeDocumentMoniker": "Aula03\\Resources\\CadFunc.cs",
+              "ToolTip": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Aula03\\Aula03\\Resources\\CadFunc.cs",
+              "RelativeToolTip": "Aula03\\Resources\\CadFunc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T00:09:11.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuPrincipal.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Aula03\\Aula03\\MenuPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "Aula03\\MenuPrincipal.Designer.cs",
+              "ToolTip": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Aula03\\Aula03\\MenuPrincipal.Designer.cs*",
+              "RelativeToolTip": "Aula03\\MenuPrincipal.Designer.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA6wCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T00:05:37.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Aula03\\Aula03\\MenuPrincipal.cs",
+              "RelativeDocumentMoniker": "Aula03\\MenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Aula03\\Aula03\\MenuPrincipal.cs*",
+              "RelativeToolTip": "Aula03\\MenuPrincipal.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T23:53:12.212Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

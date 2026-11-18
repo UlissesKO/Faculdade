@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Projeto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C59345A-EDE3-B9B3-9606-24CCC3F6EABA}|Projeto\\Projeto.csproj|c:\\users\\uliss\\onedrive\\documentos\\codigos\\repositorios\\faculdade\\6_semestre\\c#\\projeto\\projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C59345A-EDE3-B9B3-9606-24CCC3F6EABA}|Projeto\\Projeto.csproj|solutionrelative:projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C59345A-EDE3-B9B3-9606-24CCC3F6EABA}|Projeto\\Projeto.csproj|c:\\users\\uliss\\onedrive\\documentos\\codigos\\repositorios\\faculdade\\6_semestre\\c#\\projeto\\projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0C59345A-EDE3-B9B3-9606-24CCC3F6EABA}|Projeto\\Projeto.csproj|solutionrelative:projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C59345A-EDE3-B9B3-9606-24CCC3F6EABA}|Projeto\\Projeto.csproj|c:\\users\\uliss\\onedrive\\documentos\\codigos\\repositorios\\faculdade\\6_semestre\\c#\\projeto\\projeto\\banco\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C59345A-EDE3-B9B3-9606-24CCC3F6EABA}|Projeto\\Projeto.csproj|solutionrelative:projeto\\banco\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Projeto\\Projeto\\Form1.cs",
+              "RelativeDocumentMoniker": "Projeto\\Form1.cs",
+              "ToolTip": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Projeto\\Projeto\\Form1.cs",
+              "RelativeToolTip": "Projeto\\Form1.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAUwF8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T23:32:25.847Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Projeto\\Projeto\\Form1.cs",
+              "RelativeDocumentMoniker": "Projeto\\Form1.cs",
+              "ToolTip": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Projeto\\Projeto\\Form1.cs [Projeto]",
+              "RelativeToolTip": "Projeto\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T23:27:00.923Z",
+              "IsPinned": true,
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Projeto\\Projeto\\Banco\\Conexao.cs",
+              "RelativeDocumentMoniker": "Projeto\\Banco\\Conexao.cs",
+              "ToolTip": "C:\\Users\\uliss\\OneDrive\\Documentos\\Codigos\\Repositorios\\Faculdade\\6_semestre\\C#\\Projeto\\Projeto\\Banco\\Conexao.cs",
+              "RelativeToolTip": "Projeto\\Banco\\Conexao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T23:29:31.22Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
